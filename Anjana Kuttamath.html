@@ -1,19 +1,29 @@
 <html>
-    <head>
-        <title>Anjana Kuttamath</title>
-        <style>
-            div{
-               background: blanchedalmond;
+
+<head>
+    <title>Anjana Kuttamath</title>
+    <style>
+        body {
+            background: orange;
+        }
+
+        div {
+            background: orange;
+            text-align: center;
+        }
+
+        /* 
+            span {
+                background: rgb(191, 163, 219);
             }
-            span{
-                background: rgb(227, 221, 221);
-            }
-            strong{
-                background: pink;
-            }
-        .word1{
+
+            strong {
+                background: rgb(91, 22, 22);
+            } */
+
+        .word1 {
             overflow: hidden;
-            color: #000;
+            color: #000000;
             text-align: center;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -25,10 +35,12 @@
             font-weight: 900;
             line-height: normal;
             text-transform: lowercase;
+            display: block;
         }
-        .word2{
+
+        .word2 {
             overflow: hidden;
-            color: #CDD27D;
+            color: #000000;
             text-align: center;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -41,10 +53,12 @@
             line-height: normal;
             text-decoration-line: underline;
             text-transform: capitalize;
+            display: block;
         }
-        .word3{
+
+        .word3 {
             overflow: hidden;
-            color: #883493;
+            color: #000000;
             text-align: center;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -55,16 +69,35 @@
             font-weight: 900;
             line-height: normal;
             text-transform: capitalize;
+            display: block;
         }
-       
-    </style>
-    </head>
 
-    <body>
-        <div>
-            <div>
-                <span class="word1">Nothing</span> <span class="word2">is</span>  <strong class="word3">Impossible</strong>
-            </div>
-        </div>
-    </body>
+        .experiment {
+            /* color: pink; */
+            /* background: yellow; */
+            transform: rotate(30deg) scale(2.2) translate(50px, 40px);
+            /* filter: blur(8px) invert(0); */
+            display: block;
+            mix-blend-mode: difference;
+            opacity: .9;
+            transition: all 2s;
+
+            &:hover {
+                transform: rotate(180deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>
+
+            <div class="experiment">Nothing!</div><span class="word1">everything</span> <span class="word2">is</span>
+            <strong class="word3">possible</strong>
+
+        </h1>
+    </div>
+</body>
+
 </html>
