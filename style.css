@@ -1,0 +1,56 @@
+header {
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+        color: black;
+        font-size: 30px;
+        padding: 1em;
+        /* height: 2o */
+        /* background: white; */
+    }
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-style: normal;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-style: normal;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-style: normal;
+}
+
+p1 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-style: normal;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background: url('Desktop - 5.jpg') no-repeat center center/cover;
+}
+.hero1 {
+    display:flex;
+    align-items: center;
+    ;
+}
+
+/* .hey{
+                background-color: blue;
+
+            } */
