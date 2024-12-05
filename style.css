@@ -146,7 +146,7 @@ header h1:hover {
         border-radius: 0%, rgb(72, 28, 28);
 
         &:hover {
-           background: #5f1f1f;
+        background: blueviolet;
         }
 
         &:active {
