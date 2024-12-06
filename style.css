@@ -7,18 +7,41 @@ header {
     color: black;
     font-weight: bold;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     font-family: "Parkinsans", sans-serif;
-    /* background: blue */
+    /* padding: 10px 20px; */
+}
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    gap: 15px; /* Space between logo and name */
+}
 
-    a {
-        color: black;
-        font-size: 20px;
-        padding: 0.5em 1em;
-        /* background: white; */
+.logo {
+    height: 40px; /* Adjust as needed for the logo size */
+}
 
-    }
+.name-link {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 60px; /* Adjust spacing between navigation links */
+    padding: 0.3em 0.5em;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
 }
 
 header a:hover {
@@ -27,20 +50,6 @@ header a:hover {
 
 header h1:hover {
     color: #555;
-}
-
-.logo {
-    position: absolute;
-    left: 1.5%;
-    top: 5px;
-
-}
-
-.name {
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    position: absolute;
-    left: 5%;
 }
 
 .hero {
@@ -95,7 +104,6 @@ header h1:hover {
     }
 }
 
-
 .mail {
     color: rgb(255, 255, 255);
     font-size: 20px;
@@ -146,14 +154,14 @@ header h1:hover {
         border-radius: 0%, rgb(72, 28, 28);
 
         &:hover {
-        background: blueviolet;
+            background: blueviolet;
         }
 
         &:active {
             animation: transformToCircle 5s ease-out forwards;
             border-radius: 50%;
             background: rgb(250, 250, 250);
-           
+
         }
 
         /* @keyframes transformToCircle {  
@@ -177,7 +185,7 @@ header h1:hover {
     padding: 40px 20px;
     font-family: "Parkinsans", sans-serif;
 
-   
+
     .cards {
         display: flex;
         flex-wrap: wrap;
@@ -254,8 +262,8 @@ header h1:hover {
     }
 
     .portfolio-item img {
-         width: 100%;
-        height: auto;   
+        width: 100%;
+        height: auto;
         display: block;
     }
 
@@ -265,13 +273,11 @@ header h1:hover {
     }
 
     .portfolio-item:hover {
-         transform: scale(1.05);
-         transition: transform 0.3s ease;
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
     }
 
 }
-
-
 
 .hero1 {
     display: flex;

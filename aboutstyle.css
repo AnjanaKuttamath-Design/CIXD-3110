@@ -1,26 +1,47 @@
+.page1 {
+    background: black;
 
-/* General Styles */
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    color: #fff;
 }
 
 header {
     color: black;
     font-weight: bold;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     font-family: "Parkinsans", sans-serif;
-   
-    a {
-        color: black;
-        font-size: 20px;
-        padding: 0.5em 1em;
-        text-decoration: none;
-        transition: color 0.3s ease;
+    /* padding: 10px 20px; */
+}
 
-    }
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    gap: 15px; /* Space between logo and name */
+}
+
+.logo {
+    height: 40px; /* Adjust as needed for the logo size */
+}
+
+.name-link {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 60px; /* Adjust spacing between navigation links */
+    padding: 0.3em 0.5em;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
 }
 
 header a:hover {
@@ -31,21 +52,12 @@ header h1:hover {
     color: #555;
 }
 
-.logo {
-    position: absolute;
-    left: 1.5%;
-    top: 5px;
-
-}
-
 .name {
     color: rgb(0, 0, 0);
     font-size: 20px;
     position: absolute;
     left: 5%;
 }
-
-
 
 .hello {
     display: flex;
