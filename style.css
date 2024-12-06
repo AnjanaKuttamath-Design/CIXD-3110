@@ -4,13 +4,18 @@
 }
 
 header {
+    position: sticky; /* Keeps the header stuck at the top */
+    top: 0; /* Position the header at the very top */
+    z-index: 1000; /* Ensures the header is above other elements */
+    background: white; /* Add a background color to prevent transparency */
     color: black;
     font-weight: bold;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: "Parkinsans", sans-serif;
-    /* padding: 10px 20px; */
+    padding: 5px 20px;
+    box-shadow: 0 2px 5px rgba(231, 152, 27, 0.1);
 }
 
 .logo-container {
@@ -104,6 +109,28 @@ header h1:hover {
     }
 }
 
+.subject {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    position: absolute;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 300;
+    top: 10px;
+    right: 20px;
+    text-align: right;
+}
+
+.schoolname {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    position: absolute;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 300;
+    top: 30px;
+    right: 20px;
+    text-align: right;
+}
+
 .mail {
     color: rgb(255, 255, 255);
     font-size: 20px;
@@ -178,11 +205,11 @@ header h1:hover {
 
 /* whatido */
 .whatido {
-    height: 400px;
+    height: 30%;
     background-color: black;
     color: rgb(253, 253, 253);
     text-align: center;
-    padding: 40px 20px;
+    padding: 5%;
     font-family: "Parkinsans", sans-serif;
 
 
@@ -190,49 +217,24 @@ header h1:hover {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 60px;
+        gap: 3%;
     }
 
     .card {
         /* background-color: #0e0e0e; */
-        padding: 25px;
-        width: 325px;
+        padding: .5%;
+        width: 30%;
         text-align: center;
     }
 
     .card h3 {
         font-size: 1.5rem;
-        margin-bottom: 15px;
+        margin-bottom: 3%;
     }
 
     .card p {
         font-size: 1rem;
         line-height: 1.5;
-    }
-}
-
-/* namebar */
-.namebar {
-    background-color: black;
-    color: rgb(253, 253, 253);
-    height: 160px;
-    font-size: 20px;
-
-
-
-    .subject {
-        text-align: right;
-        margin-right: 15px;
-        font-family: "Parkinsans", sans-serif;
-        text-wrap: center;
-
-    }
-
-    .schoolname {
-        text-align: right;
-        margin-right: 15px;
-        font-family: "Parkinsans", sans-serif;
-        text-wrap: center;
     }
 
 }
