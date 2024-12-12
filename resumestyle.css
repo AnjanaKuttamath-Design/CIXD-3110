@@ -1,5 +1,4 @@
 
-
 header {
     position: sticky; /* Keeps the header stuck at the top */
     top: 0; /* Position the header at the very top */
@@ -54,68 +53,51 @@ header h1:hover {
     color: #555;
 }
 body{
-    background: black;
+    background-color: black;
     color: white;
-    font-family: "Parkinsans", sans-serif;   
-    
 }
 
-.projects{
+
+.text{
+    height:30vh;
     h1{
         font-size:50px;
         padding-left: 50px;
+        font-style: bold;
+        font-family: "Parkinsans", sans-serif;
     }
     p{
         font-size: 20px;
-        height: 20vh;
         padding-left: 50px;
-        font-style: normal;
         font-family: "Parkinsans", sans-serif;
     }
+    p1{
+        font-size: 15px;
+        padding-left: 50px;
+        font-family: "Parkinsans", sans-serif;
+       
+    }
+    
+    .designed,
+    .basic {
+        font-size: 30px;
+        font-weight: 700; /* Corrected from font-style to font-weight */
+    }
+    
 }
 
-/* projects */
-.portfolio {
-    height: 130vh;
-    font-family: "Parkinsans", sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #000000;
-    color: #ffffff;
-    /* White text */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 50px;
-    text-align: center;
-
-
-    .portfolio-item {
-        background-color: #000000;
-        /* Slightly lighter black */
-        border-radius: 20px;
-        padding: 10px;
-        overflow: hidden;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-    }
-
-    .portfolio-item img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    .portfolio-item h3 {
-        margin: 15px 0;
-        font-size: 1.5rem;
-        color: white;
-        font-weight: bold;
-        text-decoration: none;
-    }
-
-    .portfolio-item:hover {
-        transform: scale(1.05);
-        transition: transform 0.3s ease;
-    }
-
+.resume{
+    display: flex;           /* Use flexbox for centering */
+    justify-content: center; /* Center the iframe horizontally */
+    align-items: center;     /* Center the iframe vertically (if there's enough height) */
+    padding: 5%;             /* Reduce padding for better spacing */
+    width: 100%;             /* Ensure the container takes the full width */
+    height: 100vh;           /* Full viewport height */
+    box-sizing: border-box;
+}
+.resume iframe {
+    width: 80%;              /* Increase the width of the iframe */
+    height: 90vh;            /* Increase the height of the iframe */
+    border: none;            /* Optional: Remove the border */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow for a polished look */
 }
