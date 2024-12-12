@@ -6,7 +6,8 @@
 header {
     position: sticky; /* Keeps the header stuck at the top */
     top: 0; /* Position the header at the very top */
-    z-index: 1000; /* Ensures the header is above other elements */
+    /* z-index: 1000; Ensures the header is above other elements */
+    z-index: 1; /* Ensures it's below the header but above other sections */
     background: white; /* Add a background color to prevent transparency */
     color: black;
     font-weight: bold;
@@ -58,12 +59,15 @@ header h1:hover {
 }
 
 .hero {
+      
     display: flex;
+    position: sticky;
     align-items: center;
     height: 90vh;
     background: url('Desktop - 5.jpg') no-repeat center center/cover;
     position: relative;
-
+    
+    
     /* Hey I'm */
     p {
         color: rgb(255, 255, 255);

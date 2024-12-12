@@ -1,0 +1,80 @@
+
+
+header {
+    position: sticky; /* Keeps the header stuck at the top */
+    top: 0; /* Position the header at the very top */
+    z-index: 1000; /* Ensures the header is above other elements */
+    background: white; /* Add a background color to prevent transparency */
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Parkinsans", sans-serif;
+    padding: 5px 20px;
+    box-shadow: 0 2px 5px rgba(231, 152, 27, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    gap: 15px; /* Space between logo and name */
+}
+
+.logo {
+    height: 40px; /* Adjust as needed for the logo size */
+}
+
+.name-link {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 60px; /* Adjust spacing between navigation links */
+    padding: 0.3em 0.5em;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #555;
+}
+
+header h1:hover {
+    color: #555;
+}
+body{
+    background: black;
+    color: white;
+    font-family: "Parkinsans", sans-serif;   
+    
+}
+
+.projects{
+    h1{
+        font-size:50px;
+        padding-left: 20px;
+    }
+    p{
+        font-size: 20px;
+        height: 30vh;
+        padding-left: 20px;
+        font-style: normal;
+        font-family: "Parkinsans", sans-serif;
+    }
+}
+
+.kdwebsite{
+    padding-left: 20px;
+    
+}
