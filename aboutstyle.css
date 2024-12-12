@@ -143,23 +143,23 @@ header h1:hover {
 
 /* whatido */
 .whatido {
-    height: 400px;
+    height: 800px;
     background-color: black;
     color: rgb(253, 253, 253);
     text-align: center;
-    padding: 40px 20px;
+    padding: 20px 20px;
     font-family: "Parkinsans", sans-serif;
 
     .whatido h1 {
         font-size: 2.5rem;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 
     .cards {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 60px;
+        gap: 80px;
     }
 
     .card {
@@ -180,5 +180,46 @@ header h1:hover {
         font-size: 1rem;
         line-height: 1.5;
     }
+}
+
+.profjourney {
+    display: flex;                  
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 50px;                  
+    background-color: #000000;        
+    color: white;                  
+    font-family: "Parkinsans", sans-serif;
+    gap: 80px; 
+}
+
+.text {
+    width: 70%;                     
+    max-width: 600px;            
+    line-height: 1.6;             
+}
+
+.text h1 {
+    font-size: 2rem;                
+    margin-bottom: 20px;            
+    font-weight: bold;
+}
+
+.text p {
+    font-size: 1rem;                
+}
+
+.image {
+    width: 40%; 
+    max-width: 600px;
+    filter: invert(1);                
+}
+
+.image img {
+    width: 100%;                    
+    height: auto;                 
+    display: block;   
+    filter: invert(1);             
+    
 }
 
